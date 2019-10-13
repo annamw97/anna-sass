@@ -1,25 +1,11 @@
-$primary-color:red;
-$secondary-color: gray;
+$primary-color:orange;
+$secondary-color: turquoise;
 
-// set the variable
-$dark-border: 3px solid black;
-$light-border: 1px dashed #eee;
-
-// use the variable
-.bigbox {
-  border: $dark-border;
-}
-
-blockquote {
-  // using the variable again
-  border-left: $dark-border;
-  padding-left: 20px;
-}
 
 html, body {
     margin: 0;
     font-family: Arial;
-    color: #ffffff;
+    color: $secondary-color;
   }
   
   p, a {
@@ -45,57 +31,50 @@ html, body {
   .nav {
     width: 15%;
     min-width: 140px;
-    color: #FFCFCF;
+    color: $primary-color;
     padding-top: 55px;
     padding-right: 30px;
     text-align: center;
+    h4 {
+        -webkit-margin-before: 0;
+        margin-left: 50px;
+      }
   }
   
-  .nav h4 {
-    -webkit-margin-before: 0;
-    margin-left: 50px;
-  }
   
   .content {
     width: 85%;
     min-height: 750px;
     min-width: 600px;
-    background-color: #FFCFCF;
-  }
-  
-  .content ul {
-    padding-left: 30px;
-  }
-  
-  .content li {
-    font-size: 0.85rem;
-  }
-  
-  .content h1 {
-    font-size: 62px;
-    -webkit-margin-before: 0;
-    padding-top: 40px;
-    padding-left: 30px;
-  }
-  
-  .content video {
-    padding-left: 30px;
-  }
-  
-  .content p {
-    padding-left: 30px;
-    width: 55%;
-    min-width: 550px;
-  }
-  
-  .content a {
-    color: inherit;
-    padding-left: 30px;
-    text-decoration: none;
-  }
-  
-  .content a:hover {
-    text-decoration: underline;
-  }
-  
+    background-color: $primary-color;
 
+    > * {
+        padding-left: 30px;
+    }
+
+    li {
+        font-size: 0.85rem;
+    }
+
+    h1 {
+        font-size: 62px;
+        -webkit-margin-before: 0;
+        padding-top: 40px;
+    }
+
+    p {
+        width: 55%;
+        min-width: 550px;
+    }
+
+    a {
+        color: inherit;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+  }
+  
